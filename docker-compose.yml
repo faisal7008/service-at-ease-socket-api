@@ -2,7 +2,7 @@ version: "3"
 services:
   socket-app:
     image: node:18-alpine
-    working_dir: /app
+    working_dir: /
     volumes:
       - .:/app
     environment:
