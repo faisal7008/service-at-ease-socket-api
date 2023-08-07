@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  socket-api:
+    image: faisal7008/socket-api:latest
+    ports:
+      - '9010:9010'
+    volumes:
+      - socket-api:/app
+
+volumes:
+  socket-api:
