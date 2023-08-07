@@ -1,0 +1,12 @@
+version: "3"
+services:
+  socket-app:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      NODE_ENV: production
+    ports:
+      - "9010:9010"
+    command: ["npm", "start"]
