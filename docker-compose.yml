@@ -9,4 +9,4 @@ services:
       NODE_ENV: production
     ports:
       - "9010:9010"
-    command: ["npm", "start"]
+    command: ["sh", "-c", "npm install && npm start"]
