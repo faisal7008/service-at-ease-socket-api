@@ -1,7 +1,7 @@
-FROM node:18-alpine
+FROM node:14-alpine
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --production --frozen-lockfile
+RUN npm install
 COPY . .
 EXPOSE 9010
 CMD [ "npm", "start" ]
